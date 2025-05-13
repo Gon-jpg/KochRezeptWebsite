@@ -39,6 +39,20 @@ main {
   height: 1800px;
 }
 
+/* Syrup-drip accent */
+.ingredients-table::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 60px;
+  height: 15px;
+  background: var(--clr-primary-one);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+}
+
 #top-img {
   width: 100%;
   border-radius: 15px;
@@ -127,12 +141,14 @@ ol {
   gap: 16px;
 }
 
-li {
-  color: var(--clr-primary-one);
+table {
+  color: var(--clr-primary-two);
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 li>span {
