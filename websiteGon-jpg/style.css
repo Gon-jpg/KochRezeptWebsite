@@ -315,3 +315,25 @@ footer p {
         max-height: 200px; /* Smaller cap for mobile screens */
     }
 }
+.home-btn {
+    z-index: 9;
+    position: fixed;
+    margin-top: 4vh;
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}

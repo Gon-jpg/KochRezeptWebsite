@@ -27,6 +27,7 @@ body {
 }
 
 main {
+  z-index: 8;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +40,6 @@ main {
   height: 1800px;
 }
 
-/* Syrup-drip accent */
 .ingredients-table::after {
   content: '';
   position: absolute;
@@ -203,4 +203,20 @@ div.nutri-main {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.home-btn {
+  z-index: 9;
+  position : fixed;
+  margin-top: 4vh;
+  align-self: flex-start;
+  background-color: var(--clr-primary-one);
+  color: var(--clr-neutral-one);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
